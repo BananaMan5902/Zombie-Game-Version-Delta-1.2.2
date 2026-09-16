@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Survival</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="hud">
+    <div class="hud-top">
+      <div>❤️ HP: <span id="health">100</span></div>
+      <div>🔫 <span id="weapon">Pistol</span></div>
+      <div>💀 Kills: <span id="kills">0</span></div>
+      <div>🌊 Wave: <span id="wave">1</span>/100</div>
+    </div>
+
+    <div id="ammo">Ammo: ∞</div>
+
+    <div id="marketInfo">
+      🏪 MARKET — 100 kills = +5% weapon damage
+      <br>
+      <span id="damageBonus">Damage bonus: +0%</span>
+    </div>
+
+    <div id="controls">
+      WASD = Move | Shift = Sprint | Mouse = Aim | Left Click = Fire
+      <br>
+      1 Pistol | 2 Shotgun | 3 Flamethrower | 4 Machine Gun | 5 Rifle
+      <br>
+      E = Buy Market Upgrade
+    </div>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
